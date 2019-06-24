@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="Styles/Nieuws.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<title>Bierhier</title>
+	</head>
+	<body>
+		<script>
+		$(document).ready(function() {
+    $("#navToggle a").click(function(e){
+        e.preventDefault();
+		
+        $("header > nav").slideToggle("medium");
+        $("#logo").toggleClass("menuUp menuDown");
+    });
+    
+    $(window).resize(function() {
+        if($( window ).width() >= "600") {
+            $("header > nav").css("display", "block");
+            
+            if($("#logo").attr('class') == "menuDown") {
+                $("#logo").toggleClass("menuUp menuDown");
+            }
+        }
+        else {
+            $("header > nav").css("display", "none");
+        }
+    });
+    
+    $("header > nav > ul > li > a").click(function(e) {
+        if($( window ).width() <= "600") {
+            if($(this).siblings().size() > 0 ) {
+                $(this).siblings().slideToggle("fast")
+				$(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
+            }
+        }
+    });
+});
+		</script>
+		<header>
+			<div id="logo" class="menuUp">
+			
+				<img src="Images/Bier.png" height="70" width="70">
+			
+				<div id="navToggle"><a href="#">Menu</a></div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li>
+					<a href="#">Concerten <span class="toggle">Expand</span><span class="caret"></span></a>
+			<nav>
+                 <ul>
+					<li><a href="#">Amsterdam West</a></li>
+                        <li><a href="#">Amsterdam Oost</a></li>
+                        <li><a href="#">Almere</a></li>
+                 </ul>
+			</nav>
+					</li>
+				<li>
+					<a href="#">Sportevenemten<span class="toggle">Expand</span><span class="caret"></span></a>
+			<nav>
+                 <ul>
+					<li><a href="#">Voetbal</a></li>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Boksen</a></li>
+                 </ul>
+			</nav>
+					</li>
+				<li>
+					<a href="#">Recepten<span class="toggle">Expand</span><span class="caret"></span></a>
+			<nav>
+                 <ul>
+					<li><a href="#"></a></li>
+                        <li><a href="#">Lahmacun</a></li>
+                        <li><a href="#">Iskender</a></li>
+                        <li><a href="#">Curry</a></li>
+                 </ul>
+			</nav>
+					</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+		<div class="nieuwskop">
+			<b>Nieuws uit Almere en Amsterdam</b>
+		</div>
+		
+		<div class="amsterdam">
+			<img src="Images/Amsterdam.jpeg" height="210" width="420">
+		</div>
+		
+		<div class="amsterdamtekst">
+			Vestibulum tellus lectus, hendrerit sit amet sagittis<br> eget, consequat at diam. Morbi dapibus tellus sit <br>amet ex pharetra, eget volutpat odio consectetur. <br>Aliquam suscipit eros risus, in placerat diam<br> feugiat at. Quisque euismod quam erat, vel mollis<br> urna sodales quis. Ut accumsan est non tortor <br>rutrum euismod. Nulla nec diam vitae libero ultrices<br> aliquet non sit amet purus. Vestibulum malesuada<br> sollicitudin dolor, at interdum lectus hendrerit et.
+		</div>
+		
+		<div class="voor">
+			Duis faucibus tempor tincidunt. Cras pretium sed<br> risus vel faucibus. Vivamus condimentum aliquet <br>libero, non condimentum magna iaculis a. Vivamus <br>in quam ex. Vestibulum sed accumsan nisi, et.
+		</div>
+		
+		<div class="almere">
+			<img src="Images/Almere.jpeg" height="210" width="420">
+		</div>
+		
+		<div class="almeretekst">
+			Nulla vulputate ut lacus lacinia elementum.<br> Curabitur sapien mauris, faucibus eu volutpat sit<br> amet, sollicitudin eget orci. Fusce a placerat nibh.<br> Nulla facilisi. Phasellus vehicula tempor elit. ens,
+		</div>
+		
+		<div class="stage">
+			Stage lopen in Almere
+		</div>
+		
+	</body>
+</html>
+	
