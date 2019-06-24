@@ -1,0 +1,95 @@
+html
+{
+	background-color: #ffe6e6;
+}
+
+
+section.appel, section.visuals
+{
+	float: left;
+	width: 46%;
+}
+
+section.visuals
+{
+	text-align: right;
+}
+
+
+div#wrapper
+{
+	width: 1000px; 
+	margin: auto;
+	background-color: rgb(251, 235, 235);
+	padding: 20px;
+	
+}
+
+img.appel
+{
+	width: 465px;
+}
+
+img.visuals
+{
+	width: 450px;
+}
+
+.texti
+{
+	position: absolute;
+	left: 17.5%;
+}
+
+.foto
+{
+	position: absolute;
+	left: 44%;
+	top: 75%;
+}
+
+.rojhat
+{
+	position: absolute;
+	left: 44%;
+	top: 66%;
+}
+
+.rojhata
+{
+	position: absolute;
+	left: 66%;
+	top: 66%;
+}
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:20%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:10px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:80;
+   width:100%;
+   height:90px;   /* Height of the footer */
+   background-color: lightgray;
+}
+
+.copyright
+{
+	position: absolute;
+	text-align: center;
+	left: 45%;
+	top: 135%;
+}
+	

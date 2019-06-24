@@ -1,0 +1,24 @@
+nav
+{
+	background-color: black;
+	color: white;
+}
+
+.Navi
+{
+	font-family: arial;
+	font-weight: bold;
+}
+
+.tabel
+{
+	position: absolute;
+	top: 55%;
+	left: 55%;
+}
+
+.ele
+{
+background-color: green;
+}
+	
